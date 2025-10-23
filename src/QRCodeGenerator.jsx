@@ -2,7 +2,9 @@
 
 import { QRCodeSVG } from "qrcode.react";
 import { useState } from "react";
-import './qRCodeGenerator.css'
+import './qRCodeGenerator.css';
+import './main.css';
+
 
 export const QRCodeGenerator = () => {
   const [value, setValue] = useState(''); //  useState(''); - по дефолту в инпуте ничего
@@ -29,7 +31,7 @@ export const QRCodeGenerator = () => {
       <button type="button" onClick={onClickHandler}>
         Сгенерировать QR
       </button>
-       {result!== '' && <QRCodeSVG value={result} className="QRCode"/>}; 
+       {result!== '' && <QRCodeSVG value={result} className="QRCode"  fgColor="#0f5daaff" />}; 
      
     </div>
   );

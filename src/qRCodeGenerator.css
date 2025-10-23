@@ -1,14 +1,4 @@
-* {
-    /* border: 1px solid red; */
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
 
 .generateQRCode_container {
   width: 20vw;
@@ -35,10 +25,12 @@ input {
 }
 
 button {
-  background-color: rgba(0, 255, 255, 0.331);
+  background-color: #0f5daaff;
+  color: white;
 }
 
 .QRCode {
+    margin-top: 5vh;
     align-self: center;
     width: 50vw;
     height: 50vh;

@@ -1,11 +1,14 @@
-import { QRCodeGenerator } from "./QRCodeGenerator"; 
+import { QRCodeGenerator } from "./QRCodeGenerator";
+import { QRCodeReader } from "./QRCodeReader";
+
 
 export const Layout = () => {
-    return (
-        <div>
-  <QRCodeGenerator/>
-        </div>
-    );
+  return (
+    <div>
+      {/* <QRCodeGenerator /> */}
+      <QRCodeReader />
+    </div>
+  );
 };
 
 // export {Layout}; теперь этой функцией могут пользоваться другие файлы
