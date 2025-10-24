@@ -1,12 +1,21 @@
-import { QRCodeGenerator } from "./QRCodeGenerator";
-import { QRCodeReader } from "./QRCodeReader";
-
+import { QRCodeGenerator } from "./components/Generate/QRCodeGenerator";
+import { QRCodeReader } from "./components/Scan/QRCodeReader";
+import { GenerateHistory } from "./components/GenerateHistory/GenerateHistory";
+import { ScanHistory } from "./components/ScanHistory/ScanHistory";
+import { Navigation } from "./components/Navigation/Navigation";
+import { Route, Routes } from "react-router-dom";
 
 export const Layout = () => {
   return (
     <div>
-      {/* <QRCodeGenerator /> */}
-      <QRCodeReader />
+      <Navigation />
+      <Routes>
+        {/* <Route path="/" element={<Navigation/>}> </Route> */}
+        <Route path="/generate" element={<QRCodeGenerator />} />
+        <Route path="/scan" element={<QRCodeReader />} />
+        <Route path="/generateHistory" element={<GenerateHistory />} />
+        <Route path="/scanHistory" element={<ScanHistory  />} />
+      </Routes>
     </div>
   );
 };

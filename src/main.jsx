@@ -1,26 +1,9 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-// import { Layout } from "./Layout";
-import { QRCodeGenerator } from "./QRCodeGenerator";
-import { Navigation } from "./Navigation";
-import { QRCodeReader } from "./QRCodeReader";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-const router = createBrowserRouter([
-   {
-    path: "/",
-    element: <Navigation/>,
-  },
-  {
-    path: "/generate",
-    element: <QRCodeGenerator/>,
-  },
-  {
-    path: "/scan",
-    element: <QRCodeReader/>,
-  },
-]);
+import { Layout } from "./Layout";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router}/>
+  <BrowserRouter>
+    <Layout />
+  </BrowserRouter>
 );

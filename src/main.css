@@ -1,13 +1,18 @@
 * {
-    /* border: 1px solid red; */
     margin: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: sans-serif;
+    transition: all .2s ease;
 }
-
 
 body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background-color: black;
+}
+
+:root {
+    --accent-color: rgba(0, 255, 255, 0.244);
+    --support-color: rgb(1, 98, 98);
 }
