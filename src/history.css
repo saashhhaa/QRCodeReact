@@ -15,7 +15,8 @@
 
 .historyCover {
     max-height: 80vh;
-    padding: 15vh 10vw 5vh 10vw;
+    padding: 5vh 10vw;
+    overflow-y: auto;
 }
 
 .historyCover::-webkit-scrollbar {

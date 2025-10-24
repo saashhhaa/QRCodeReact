@@ -1,5 +1,5 @@
 import { QRCodeSVG } from "qrcode.react";
-import "./GenerateHistory.css";
+import "../../history.css";
 import "../../main.css";
 import { GENERATE_DATA } from "../../constants";
 

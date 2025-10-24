@@ -5,15 +5,10 @@ body {
 nav {
     display: flex;
     gap: 7vw;
-    margin-top: 5vh;
+    margin: 5vh 0;
     font-size: 16px;
-    position: absolute;
-    left: 50%;
-    top:0;
-    transform: translateX(-50%);
-    z-index: 100;
-    background-color: black;
     height: 10vh;
+    justify-content: center;
 }
 
 * {
