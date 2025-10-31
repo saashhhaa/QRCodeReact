@@ -3,7 +3,6 @@
 import { QRCodeSVG } from "qrcode.react";
 import { useState } from "react";
 import "./qRCodeGenerator.css";
-import "../../main.css";
 import { GENERATE_DATA} from "../../constants";
 
 export const QRCodeGenerator = () => {

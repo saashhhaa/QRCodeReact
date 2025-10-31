@@ -4,6 +4,8 @@ import { GenerateHistory } from "./components/History/GenerateHistory";
 import { ScanHistory } from "./components/History/ScanHistory";
 import { Navigation } from "./components/Navigation/Navigation";
 import { Route, Routes } from "react-router-dom";
+import "./main.css";
+import "./history.css";
 
 export const Layout = () => {
   return (

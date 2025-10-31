@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../../main.css";
 import "./navigation.css";
 
 export const Navigation = () => {

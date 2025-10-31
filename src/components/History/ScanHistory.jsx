@@ -1,7 +1,4 @@
 import { QRCodeSVG } from "qrcode.react";
-import { useState } from "react";
-import "../../history.css";
-import "../../main.css";
 import { SCAN_DATA } from "../../constants";
 
 export const ScanHistory = () => {

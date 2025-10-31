@@ -1,6 +1,4 @@
 import { QRCodeSVG } from "qrcode.react";
-import "../../history.css";
-import "../../main.css";
 import { GENERATE_DATA } from "../../constants";
 
 export const GenerateHistory = () => {
